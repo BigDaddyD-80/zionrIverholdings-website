@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zion River Holdings — Family of Companies</title>
+<meta name="description" content="Zion River Holdings is the parent holding company of Doleman Enterprises LLC and its family of ventures, including telecom brokerage, SaaS, publishing, music, and author platforms.">
+<meta name="author" content="Zion River Holdings">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.zionriverholdings.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.zionriverholdings.com/">
+<meta property="og:title" content="Zion River Holdings — Family of Companies">
+<meta property="og:description" content="Parent holding company of Doleman Enterprises LLC and its family of ventures.">
+<meta property="og:site_name" content="Zion River Holdings">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zion River Holdings — Family of Companies">
+<meta name="twitter:description" content="Parent holding company of Doleman Enterprises LLC and its family of ventures.">
+
+<!-- ORGANIZATION SCHEMA — Corporate Root -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "Zion River Holdings",
+  "url": "https://www.zionriverholdings.com",
+  "description": "Zion River Holdings is a private holding company and the parent entity of Doleman Enterprises LLC and its family of operating ventures.",
+  "subOrganization": [
+    {
+      "@type": "Organization",
+      "name": "Doleman Enterprises LLC",
+      "url": "https://www.dolemanenterprises.com",
+      "description": "Independent telecom brokerage serving businesses across Texas, Louisiana, Oklahoma, and Arkansas.",
+      "subOrganization": [
+        {
+          "@type": "Organization",
+          "name": "Revelation Recording",
+          "url": "https://www.revelationrecording.com",
+          "description": "Publishing and creative home of Brad Doleman — author, songwriter, and producer.",
+          "subOrganization": [
+            {
+              "@type": "MusicGroup",
+              "name": "The Pines and Wires",
+              "url": "https://www.thepinesandwires.com"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "StashYourStudio",
+              "url": "https://www.stashyourstudio.com"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "Journey 2 Knowledge",
+          "url": "https://www.journey2knowledge.org",
+          "description": "Author platform and publishing site for Brad Doleman's books across faith, technology, and family legacy."
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --bg:        #0D1822;
+  --surface:   #1E2F3F;
+  --surface-2: #152232;
+  --gold:      #B8902E;
+  --gold-lt:   #D4A843;
+  --gold-dim:  rgba(184,144,46,0.18);
+  --text:      #F0EBE1;
+  --muted:     rgba(240,235,225,0.55);
+  --border:    rgba(240,235,225,0.10);
+  --max:       1100px;
+  --pad:       clamp(24px,5vw,72px);
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(13,24,34,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 var(--pad);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.9;
+}
+.nav-mark span { color: var(--gold); }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); }
+
+/* ── HERO ── */
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(72px,10vw,130px) var(--pad) clamp(56px,7vw,96px);
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.hero-label {
+  font-family: 'Karla', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.hero-label::before,
+.hero-label::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px,7vw,96px);
+  font-weight: 500;
+  line-height: 1.0;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-lt);
+}
+.hero-sub {
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--muted);
+  font-weight: 300;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ── RIVER DIVIDER (signature element) ── */
+.river-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin: 0;
+  opacity: 0.3;
+}
+.river-divider svg {
+  display: block;
+  width: 100%;
+  height: 32px;
+}
+
+/* ── COMPANIES SECTION ── */
+.section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(56px,7vw,96px) var(--pad);
+}
+.section-header {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.section-h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px,4vw,44px);
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+/* Primary company card */
+.card-primary {
+  background: var(--surface);
+  border: 1px solid rgba(184,144,46,0.25);
+  padding: 44px 48px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+.card-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: var(--gold);
+}
+.card-primary:hover { border-color: rgba(184,144,46,0.5); }
+.card-primary-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+}
+.card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+.card-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.card-title a:hover { color: var(--gold-lt); }
+.card-desc {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 540px;
+}
+.card-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--gold-dim);
+  padding: 5px 12px;
+  white-space: nowrap;
+  border: 1px solid rgba(184,144,46,0.2);
+  flex-shrink: 0;
+}
+
+/* Sub-company grid */
+.sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+.sub-grid-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 16px 0 8px 24px;
+  border-left: 1px solid var(--border);
+  padding-left: 16px;
+  opacity: 0.7;
+}
+.card-sub {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 28px 30px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.card-sub:hover {
+  border-color: rgba(184,144,46,0.2);
+  background: var(--surface);
+}
+.card-sub-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.card-sub-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.card-sub-title a:hover { color: var(--gold-lt); }
+.card-sub-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  font-weight: 300;
+}
+.card-sub-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.75;
+  margin-top: 10px;
+}
+
+/* Leaf cards (smallest) */
+.leaf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+.card-leaf {
+  background: rgba(13,24,34,0.6);
+  border: 1px solid var(--border);
+  padding: 20px 22px;
+  transition: border-color 0.2s;
+}
+.card-leaf:hover { border-color: rgba(184,144,46,0.15); }
+.card-leaf-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+  opacity: 0.9;
+}
+.card-leaf-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.card-leaf-title a:hover { color: var(--gold-lt); }
+.card-leaf-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ── DIVIDER LINE ── */
+.rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ── ABOUT ── */
+.about-section {
+  background: var(--surface-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.about-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(48px,6vw,80px) var(--pad);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.about-h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(26px,3.5vw,40px);
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.about-h3 em { font-style: italic; color: var(--gold-lt); }
+.about-body {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+}
+.about-body + .about-body { margin-top: 16px; }
+
+/* ── FOOTER ── */
+footer {
+  background: #080F15;
+  border-top: 1px solid var(--border);
+  padding: 48px var(--pad);
+}
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  opacity: 0.6;
+}
+.footer-links a:hover { opacity: 1; color: var(--gold-lt); }
+.footer-copy {
+  font-size: 11px;
+  color: var(--muted);
+  opacity: 0.3;
+  letter-spacing: 0.04em;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:800px){
+  .card-primary-inner { grid-template-columns: 1fr; }
+  .sub-grid { grid-template-columns: 1fr; }
+  .leaf-grid { grid-template-columns: 1fr; }
+  .about-inner { grid-template-columns: 1fr; gap: 32px; }
+  .nav-links { display: none; }
+}
+@media(max-width:480px){
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-mark">Zion River <span>Holdings</span></a>
+  <ul class="nav-links">
+    <li><a href="#companies">Companies</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="reveal">
+    <div class="hero-label">Private Holding Company</div>
+    <h1>Built to<br><em>last.</em></h1>
+    <p class="hero-sub">Zion River Holdings is the parent company behind a family of operating ventures spanning telecommunications, technology, publishing, music, and creative work.</p>
+  </div>
+</section>
+
+<!-- RIVER DIVIDER — signature element -->
+<div class="river-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,16 C120,4 240,28 360,16 C480,4 600,28 720,16 C840,4 960,28 1080,16 C1200,4 1320,28 1440,16 L1440,32 L0,32 Z"
+          fill="#B8902E" opacity="0.4"/>
+    <path d="M0,20 C180,8 360,28 540,18 C720,8 900,28 1080,18 C1260,8 1380,26 1440,20"
+          fill="none" stroke="#B8902E" stroke-width="0.75" opacity="0.6"/>
+  </svg>
+</div>
+
+<!-- COMPANIES -->
+<section class="section" id="companies">
+  <div class="section-header reveal">
+    <div class="section-label">Our Companies</div>
+    <h2 class="section-h2">The family of ventures</h2>
+  </div>
+
+  <!-- DOLEMAN ENTERPRISES LLC — primary -->
+  <div class="card-primary reveal">
+    <div class="card-primary-inner">
+      <div>
+        <div class="card-title"><a href="https://www.dolemanenterprises.com" target="_blank" rel="noopener">Doleman Enterprises LLC</a></div>
+        <p class="card-desc">Independent telecom brokerage serving businesses across Texas, Louisiana, Oklahoma, and Arkansas. Shops 500+ carrier agreements — AT&amp;T, Comcast, Verizon, Lumen, and more — to find the best rates on internet, voice, SD-WAN, cloud, and wireless. Free to your business.</p>
+      </div>
+      <span class="card-tag">Operating Company</span>
+    </div>
+  </div>
+
+  <!-- REVELATION RECORDING sub-header -->
+  <div class="sub-grid-label reveal">Subsidiaries of Doleman Enterprises LLC</div>
+
+  <div class="sub-grid reveal">
+    <!-- REVELATION RECORDING -->
+    <div class="card-sub">
+      <div class="card-sub-title"><a href="https://www.revelationrecording.com" target="_blank" rel="noopener">Revelation Recording</a></div>
+      <p class="card-sub-desc">The publishing and creative home of Brad Doleman — author, songwriter, and producer. Publisher of books, music, and original creative work. Home of The Pines and Wires and StashYourStudio.</p>
+      <span class="card-sub-tag">Publishing &amp; Creative</span>
+
+      <!-- LEAF COMPANIES under RR -->
+      <div class="leaf-grid" style="margin-top:18px;">
+        <div class="card-leaf">
+          <div class="card-leaf-title"><a href="https://www.thepinesandwires.com" target="_blank" rel="noopener">The Pines and Wires</a></div>
+          <p class="card-leaf-desc">Original music by Brad Doleman. Distributed via TuneCore. Active on YouTube, Facebook, Instagram, and Twitter.</p>
+        </div>
+        <div class="card-leaf">
+          <div class="card-leaf-title"><a href="https://www.stashyourstudio.com" target="_blank" rel="noopener">StashYourStudio</a></div>
+          <p class="card-leaf-desc">SaaS platform for independent musicians and self-published authors. Song Builder, Book Builder, royalty tracking, release pipeline, and vault storage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JOURNEY 2 KNOWLEDGE -->
+    <div class="card-sub">
+      <div class="card-sub-title"><a href="https://www.journey2knowledge.org" target="_blank" rel="noopener">Journey 2 Knowledge</a></div>
+      <p class="card-sub-desc">Author platform and publishing site for Brad Doleman's catalog of books across faith, Scripture poetry, technology, and family legacy. Published under Revelation Recording.</p>
+      <span class="card-sub-tag">Author Platform &amp; Publishing</span>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="reveal">
+      <h3 class="about-h3">A holding company<br>built on <em>conviction.</em></h3>
+    </div>
+    <div class="reveal">
+      <p class="about-body">Zion River Holdings is a private family holding company based in Katy, Texas. It serves as the corporate parent of Doleman Enterprises LLC and the ventures that operate beneath it — each one built with a specific purpose, a specific audience, and a long view.</p>
+      <p class="about-body">The companies span telecommunications, SaaS, creative publishing, music production, and Christian authorship. They are connected by a shared commitment to quality, integrity, and work that holds its value over time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-mark">Zion River Holdings</div>
+    <ul class="footer-links">
+      <li><a href="https://www.dolemanenterprises.com" target="_blank" rel="noopener">Doleman Enterprises</a></li>
+      <li><a href="https://www.revelationrecording.com" target="_blank" rel="noopener">Revelation Recording</a></li>
+      <li><a href="https://www.thepinesandwires.com" target="_blank" rel="noopener">The Pines and Wires</a></li>
+      <li><a href="https://www.stashyourstudio.com" target="_blank" rel="noopener">StashYourStudio</a></li>
+      <li><a href="https://www.journey2knowledge.org" target="_blank" rel="noopener">Journey 2 Knowledge</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="yr"></span> Zion River Holdings &middot; Katy, Texas &middot; Private Holding Company</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
