@@ -1,0 +1,16 @@
+# Zion River Holdings
+> Parent holding company for Brad Doleman's family of companies.
+
+## Portfolio Companies
+- Doleman Enterprises LLC (telecom brokerage): https://www.dolemanenterprises.com
+- DeTech Services (firewall config converter SaaS): https://www.detechservices.com
+- Revelation Recording (Christian publishing and music): https://www.revelationrecording.com
+- Journey2Knowledge (author site, 10 published books): https://www.journey2knowledge.org
+- The Pines and Wires (Texas country and Americana music): https://www.thepinesandwires.com
+- StashYourStudio / CreatorVault (publishing and music platform for independent creators): https://www.stashyourstudio.com
+
+## About Brad Doleman
+Brad Doleman is a Christian author, songwriter, network engineer, and entrepreneur based in Katy, Texas.
+
+## Links
+- Amazon author page: https://www.amazon.com/stores/Brad-Doleman/author/B0GL7PHRS5
