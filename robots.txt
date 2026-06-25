@@ -4,13 +4,19 @@
 User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
+Disallow: /backoffice/
+Disallow: /admin/
+Disallow: /portal/
 
 User-agent: Googlebot
 Allow: /
+Disallow: /backoffice/
+Disallow: /admin/
 Crawl-delay: 2
 
 User-agent: Bingbot
 Allow: /
+Disallow: /backoffice/
 Crawl-delay: 2
 
 User-agent: Slurp
@@ -18,6 +24,8 @@ Allow: /
 
 User-agent: GPTBot
 Allow: /
+Disallow: /backoffice/
+Disallow: /admin/
 
 User-agent: ChatGPT-User
 Allow: /
